@@ -725,3 +725,14 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Slick Carousel Arrows */
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
