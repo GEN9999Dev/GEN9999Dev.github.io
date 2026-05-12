@@ -226,77 +226,66 @@
             Vous pouvez voir ici les projets que j'ai réalisés au cours de ma formation.
           </span>
         </h2>
+      </div>
 
-        <div class="projects__content carousel">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/project-1-example.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Module de tests capteurs</h3>
-              <p class="projects__row-content-desc">
-                Développement d'une application en python sur Raspberry Pi
-                séparée en une interface graphique via customtkiner et une
-                interface en lignes de commandes
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Voir plus</a
-              >
+      <div class="projects__carousel-wrapper">
+        <div class="projects__carousel-container">
+          <!-- Slide 1 -->
+          <div class="projects__carousel-slide active">
+            <div class="projects__card shadow-large">
+              <div class="projects__card-image">
+                <img src="./assets/png/project-1-example.png" alt="Module de tests capteurs" />
+              </div>
+              <div class="projects__card-info">
+                <h3>Module de tests capteurs</h3>
+                <p>Développement d'une application en Python sur Raspberry Pi séparée en une interface graphique via CustomTkinter et une interface en lignes de commandes.</p>
+                <a href="./project-1.html" class="btn btn--med btn--theme">Voir plus</a>
+              </div>
             </div>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/project-2-example.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Application bureau</h3>
-              <p class="projects__row-content-desc">
-                Développement d'une application bureau en C# via le framework
-                WinForms dans le cadre d'un projet de cours pour l'entreprise
-                fictive AngerScoot
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Voir plus</a
-              >
+
+          <!-- Slide 2 -->
+          <div class="projects__carousel-slide">
+            <div class="projects__card shadow-large">
+              <div class="projects__card-image">
+                <img src="./assets/png/project-2-example.png" alt="Application AngersScoot" />
+              </div>
+              <div class="projects__card-info">
+                <h3>Application AngersScoot - C# WinForms</h3>
+                <p>Application de gestion de trottinettes pour une entreprise fictive angevine. Fonctionnalités : création d'utilisateurs, suivi d'utilisation, interface intuitive.</p>
+                <a href="./project-2.html" class="btn btn--med btn--theme">Voir plus</a>
+              </div>
             </div>
           </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/png/project-3-example.png"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Site WEB Wordpress</h3>
-              <p class="projects__row-content-desc">
-                Réalisation d'un site WEB complet via le CMS Wordpress,
-                et d'une documentation utilisateur, dans le cadre d'un
-                projet de cours pour l'entreprise fictive Aid'1 Jeun
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                >Voir plus</a
-              >
+
+          <!-- Slide 3 -->
+          <div class="projects__carousel-slide">
+            <div class="projects__card shadow-large">
+              <div class="projects__card-image">
+                <img src="./assets/png/project-3-example.png" alt="Site vitrine WordPress" />
+              </div>
+              <div class="projects__card-info">
+                <h3>Site vitrine WordPress - Aid'1 Jeun</h3>
+                <p>Réalisation d'un site WEB complet via le CMS WordPress, et d'une documentation utilisateur pour l'entreprise fictive Aid'1 Jeun.</p>
+                <a href="./project-3.html" class="btn btn--med btn--theme">Voir plus</a>
+              </div>
             </div>
           </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="projects__carousel-button projects__carousel-prev" onclick="moveProjectsCarousel(-1)">
+          <span>❮</span>
+        </button>
+        <button class="projects__carousel-button projects__carousel-next" onclick="moveProjectsCarousel(1)">
+          <span>❯</span>
+        </button>
+
+        <!-- Carousel dots -->
+        <div class="projects__carousel-dots">
+          <span class="projects__dot active" onclick="currentProjectSlide(0)"></span>
+          <span class="projects__dot" onclick="currentProjectSlide(1)"></span>
+          <span class="projects__dot" onclick="currentProjectSlide(2)"></span>
         </div>
       </div>
     </section>
